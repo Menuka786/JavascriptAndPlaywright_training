@@ -1,0 +1,65 @@
+/*
+
+Vriable types
+
+1. Var (older)
+Scope : Global scope + Block scope
+
+2. let
+3.const 
+scope : Global _Block scope
+
+
+//redeclaration is allowed for var but not for let and const.
+//reassignment is allowed for var and let, but not for const.
+let variable = 10; // you can not redeclare this variable using let.
+ global scope variable example: when data is declared inside JS file and outside any function.
+
+var globalVar = "I am global";      
+
+Function : we use function keyword to declare a function in JavaScript.
+Example:
+function myFunction() {
+  console.log("Hello from myFunction!");
+}
+myFunction();
+Symbol: A unique and immutable primitive value, often used as object property keys.
+Example:
+const mySymbol = Symbol("description");
+console.log(mySymbol);
+
+
+*/
+
+let employeid = Symbol("employee ID");
+let payroll = Symbol("payroll");
+console.log(employeid);
+console.log(payroll);
+
+
+let employee = {}; // Initialize the employee object  
+employee[employeid] = "12345";
+console.log(employee[employeid]);
+employee[payroll] = "67890";
+console.log(employee[payroll]);
+
+
+let student1 ={
+  fname: "menuka",
+  age :15
+  ,
+  grade: "10th"
+
+}
+let student2 ={
+  fname: "menuka2",
+  age :15
+  ,
+  grade: "10th"
+
+}
+let studentID = Symbol("student ID");
+student1[studentID] = "S12345";
+student2[studentID] = "S67890";
+console.log(student1[studentID]);
+console.log(student2[studentID]);

@@ -1,0 +1,139 @@
+/* Variable
+---------
+Variable is name of storage location where we can store data
+In JS we use 3 keyword to delcare a variable 
+----------
+var (older/no recomended to use), let (mostly for Mutable data). const (immutable data)
+Syntax
+---
+let variableName=value;
+
+
+let id =101;
+let fname='Jay";
+
+
+Data Types
+-----
+Datatypes define what type of data we can store into variable
+As JS is a dynamically typed language, we do not need to specify the data type of a variable explicitly. The type is determined automatically based on the value assigned to the variable.
+
+Types of Dataypes
+----
+1.Primitive data types
+2.Non-primitive data types
+
+Primitive data types include:
+- Number
+- String
+- Boolean
+- Null
+- Undefined
+- Symbol (ES6)
+- BigInt (ES11)
+
+Non-primitive data types include:
+- Object
+- Array
+- Function
+Any number which is positive integer/negative integer/floating poing number are nuber type in JS
+
+size : 8byte(64bits)
+1byte=8bits
+
+*/
+
+console.log(Number.MAX_VALUE);
+
+let isActive=true;
+console.log(isActive);  
+console.log(typeof isActive);
+
+/* sting is collection of characters 
+String is primitve dataype
+String isDynamic object
+
+Note : In Js we don't have any char type
+Everything is string even a single character in JS  */
+/*
+
+Ways to declare string in JS include:
+1. Using single quotes: 'Hello'
+2. Using double quotes: "Hello"
+3. Using backticks (template literals): `Hello`
+
+8bits=1byte
+template string
+To read value from external variable inside a template string, we use the `${variableName}` syntax.
+Example:
+let name = 'Jay';
+console.log(`Hello, ${name}!`);     
+
+
+Undefined is a primitive data type in JavaScript.
+It represents a variable that has been declared but has not yet been assigned a value.
+Example:
+let age;
+console.log(age); // Output: undefined
+console.log(typeof age); // Output: "undefined"
+
+null is another primitive data type in JavaScript.
+It represents the intentional absence of any object value.
+Example:
+let data = null;
+console.log(data); // Output: null
+console.log(typeof data); // Output: "object"
+
+
+Symbol is a primitive data type introduced in ES6.
+It represents a unique and immutable value.
+Example:
+let sym = Symbol('description');
+console.log(sym); // Output: Symbol(description)
+console.log(typeof sym); // Output: "symbol"
+object 
+
+group of objects is called an array in JavaScript.
+Example:
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+console.log(typeof numbers); // Output: "object"
+
+goup of similer object can be in one class in JavaScript.
+Example:
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+let person1 = new Person('Jay', 25);
+let person2 = new Person('Alice', 30);
+console.log(person1); // Output: Person { name: 'Jay', age: 25 }
+console.log(person2); // Output: Person { name: 'Alice', age: 30 }
+-------------------
+
+How to create objects in JavaScript?
+
+1. Object literal
+2. Class level Object
+3.constructor function
+4. Prototype based object (object.create)
+let user = {};
+console.log(user);
+
+Object is non-primitive data type in JavaScript.
+
+To Access properties of an object, we can use either dot notation or bracket notation.
+Example:
+console.log(user.name); // Using dot notation
+console.log(user['name']); // Using bracket notation
+
+
+
+*/
+
+
+
+
+
