@@ -1,0 +1,17 @@
+/*
+
+Hoisting
+_____
+
+
+hoisting means declaration process first before execution. 
+
+
+let/Const variables and function expression syntax (Anonymous function, Arrow function)
+these are part of Temporal dead Zone, so before initialization if you try to call it you will see reference error :
+When you use modern syntax function with var type variable then you will get type error undefined, other then var you will get error if you call before declaration, as let and const are part of Temporal dead Zone.
+
+
+
+
+*/
